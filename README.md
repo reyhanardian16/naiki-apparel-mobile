@@ -1,5 +1,7 @@
 Nama : Muhammad Reyhan Ardian
+
 NPM : 230627185
+
 Kelas : PBP D
 
 Implementasi Checklist
@@ -19,7 +21,10 @@ Dengan menambahkan parameter warna pada itemCard dan menambahkan warna yang berb
 
 Dengan memanggil fungsi showSnackBar pada saat onTap widget itemCard, dan mengisi parameter yang sesuai
 
+
+
 Pertanyaan
+
   1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget, dan jelaskan perbedaan dari keduanya.
 
 Stateless widget adalah widget yang tidak memiliki state yang dapat berubah setelah dibuat. 
