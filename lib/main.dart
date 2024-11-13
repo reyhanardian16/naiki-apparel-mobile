@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:naiki_apparel/menu.dart';
+import 'package:naiki_apparel/screens/menu.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Naiki Apparel',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.grey,
+          primarySwatch: Colors.green,
         ).copyWith(secondary: Colors.black),
       ),
       home: MyHomePage(),
