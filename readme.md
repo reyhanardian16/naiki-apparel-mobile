@@ -1,5 +1,7 @@
 Nama : Muhammad Reyhan Ardian
+
 NPM : 230627185
+
 Kelas : PBP D
 
 Implementasi Checklist
@@ -11,15 +13,18 @@ Dengan menginisialisasi projek flutter dengan flutter create, lalu menambahkan w
 
 Dengan menambahkan widget itemCard ke dalam myHomePage dengan masing-masing memiliki konteks berupa nama, ikon dan warna
 
-  4. Mengimplementasikan warna-warna yang berbeda untuk setiap tombol (Lihat Daftar Produk, Tambah Produk, dan Logout).
+  3. Mengimplementasikan warna-warna yang berbeda untuk setiap tombol (Lihat Daftar Produk, Tambah Produk, dan Logout).
 
 Dengan menambahkan parameter warna pada itemCard dan menambahkan warna yang berbeda pada masing-masing item 
 
-  6. Memunculkan Snackbar
+  4. Memunculkan Snackbar
 
 Dengan memanggil fungsi showSnackBar pada saat onTap widget itemCard, dan mengisi parameter yang sesuai
 
+
+
 Pertanyaan
+
   1. Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget, dan jelaskan perbedaan dari keduanya.
 
 Stateless widget adalah widget yang tidak memiliki state yang dapat berubah setelah dibuat. 
