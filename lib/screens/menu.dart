@@ -7,13 +7,16 @@ class MyHomePage extends StatelessWidget {
   final String name = 'Muhammad Reyhan Ardian';
   final String className = 'PBP D';
   final List<ItemHomepage> items = [
-    ItemHomepage("Lihat Daftar Produk", Icons.remove_red_eye, const Color.fromARGB(255, 21, 93, 40)),
-    ItemHomepage("Tambah Produk", Icons.add, const Color.fromARGB(255, 47, 87, 137)),
-    ItemHomepage("Logout", Icons.logout, const Color.fromARGB(255, 84, 70, 105)),
+    ItemHomepage("Lihat Daftar Produk", Icons.remove_red_eye,
+        const Color.fromARGB(255, 21, 93, 40)),
+    ItemHomepage(
+        "Tambah Produk", Icons.add, const Color.fromARGB(255, 47, 87, 137)),
+    ItemHomepage(
+        "Logout", Icons.logout, const Color.fromARGB(255, 84, 70, 105)),
   ];
-  
+
   MyHomePage({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,9 +43,7 @@ class MyHomePage extends StatelessWidget {
                 InfoCard(title: 'Class', content: className),
               ],
             ),
-
             const SizedBox(height: 16.0),
-
             Center(
               child: Column(
                 children: [
@@ -56,7 +57,6 @@ class MyHomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-
                   GridView.count(
                     primary: true,
                     padding: const EdgeInsets.all(20),
@@ -64,7 +64,6 @@ class MyHomePage extends StatelessWidget {
                     mainAxisSpacing: 10,
                     crossAxisCount: 3,
                     shrinkWrap: true,
-
                     children: items.map((ItemHomepage item) {
                       return ItemCard(item);
                     }).toList(),
@@ -78,15 +77,11 @@ class MyHomePage extends StatelessWidget {
       drawer: const LeftDrawer(),
     );
   }
-
-
-
 }
 
 class InfoCard extends StatelessWidget {
-
-  final String title;  // Judul kartu.
-  final String content;  // Isi kartu.
+  final String title; // Judul kartu.
+  final String content; // Isi kartu.
 
   const InfoCard({super.key, required this.title, required this.content});
 
@@ -111,4 +106,3 @@ class InfoCard extends StatelessWidget {
     );
   }
 }
-

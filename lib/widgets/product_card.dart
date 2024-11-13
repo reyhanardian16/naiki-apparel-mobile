@@ -2,35 +2,34 @@ import 'package:flutter/material.dart';
 import 'package:naiki_apparel/screens/product_form.dart';
 
 class ItemHomepage {
-    final String name;
-    final IconData icon;
-    final Color color;
+  final String name;
+  final IconData icon;
+  final Color color;
 
-    ItemHomepage(this.name, this.icon, this.color);
+  ItemHomepage(this.name, this.icon, this.color);
 }
 
 class ItemCard extends StatelessWidget {
+  final ItemHomepage item;
 
-  final ItemHomepage item; 
-  
-  const ItemCard(this.item, {super.key}); 
+  const ItemCard(this.item, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Material(
       color: item.color,
       borderRadius: BorderRadius.circular(12),
-      
       child: InkWell(
         onTap: () {
           ScaffoldMessenger.of(context)
             ..hideCurrentSnackBar()
-            ..showSnackBar(
-              SnackBar(content: Text("Kamu telah menekan tombol ${item.name}!"))
-            );
+            ..showSnackBar(SnackBar(
+                content: Text("Kamu telah menekan tombol ${item.name}!")));
           if (item.name == "Tambah Produk") {
-            Navigator.push(context,
-            MaterialPageRoute(builder: (context) => const ProductFormPage()));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const ProductFormPage()));
           }
         },
         child: Container(
@@ -57,5 +56,4 @@ class ItemCard extends StatelessWidget {
       ),
     );
   }
-  
 }
