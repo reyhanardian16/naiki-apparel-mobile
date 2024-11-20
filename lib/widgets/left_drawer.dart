@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:naiki_apparel/screens/list_productentry.dart';
 import 'package:naiki_apparel/screens/menu.dart';
 import 'package:naiki_apparel/screens/product_form.dart';
 
@@ -56,6 +57,17 @@ class LeftDrawer extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                       builder: (context) => const ProductFormPage()));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.remove_red_eye),
+            title: const Text('Daftar Product'),
+            onTap: () {
+              // Route menu ke halaman mood
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProductEntryPage()),
+              );
             },
           ),
         ],
